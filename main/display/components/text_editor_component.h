@@ -23,9 +23,8 @@
 #include <lvgl.h>
 
 namespace textEditor {
-lv_obj_t *create_text_editor(lv_obj_t *container, const char *text,
-                             void (*callbackFn)(const char *, void *),
-                             size_t max_length = 0,
-                             const char *accepted_chars = NULL,
-                             bool is_number = false, void *user_data = NULL);
+lv_obj_t *create(lv_obj_t *container, const char *text,
+                 void (*callbackFn)(const char *, void *),
+                 size_t max_length = 0, const char *accepted_chars = NULL,
+                 bool is_number = false, void *user_data = NULL);
 }  // namespace textEditor

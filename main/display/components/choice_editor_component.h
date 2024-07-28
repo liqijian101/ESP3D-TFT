@@ -28,9 +28,8 @@
 #include "lvgl.h"
 
 namespace choiceEditor {
-lv_obj_t *create_choice_editor(lv_obj_t *container, const char *text,
-                               const char *title,
-                               std::list<std::string> &choices,
-                               void (*callbackFn)(const char *, void *),
-                               void *user_data = NULL);
+lv_obj_t *create(lv_obj_t *container, const char *text, const char *title,
+                 std::list<std::string> &choices,
+                 void (*callbackFn)(const char *, void *),
+                 void *user_data = NULL);
 }  // namespace choiceEditor

@@ -24,8 +24,6 @@
 
 #include "esp3d_styles.h"
 
-
 namespace mainContainer {
-lv_obj_t *create_main_container(lv_obj_t *parent, lv_obj_t *button_back,
-                                ESP3DStyleType style);
+lv_obj_t *create(lv_obj_t *parent, lv_obj_t *button_back, ESP3DStyleType style);
 }  // namespace mainContainer
